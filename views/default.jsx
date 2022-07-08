@@ -9,6 +9,12 @@ function Def (html) {
                 <link rel='stylesheet' href='/css/style.css'/>
             </head>
             <body>
+                <nav>
+                <ul>
+                    <li><a href='/stocks'> Click for Saved List of Stocks</a></li>
+                    <li><a href='/stocks/new'>Add New Stock</a></li>
+                </ul>
+            </nav>
                 {html.children}
             </body>
         </html>
