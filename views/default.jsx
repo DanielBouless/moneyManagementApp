@@ -11,8 +11,9 @@ function Def (html) {
             <body>
                 <nav>
                 <ul>
-                    <li><a href='/stocks'> Click for Saved List of Stocks</a></li>
-                    <li><a href='/stocks/new'>Add New Stock</a></li>
+                    <li><a href='/stocks'> Asset Portfolio</a></li>
+                    <li><a href='/stocks/new'>New Asset</a></li>
+                    <li><a href='/stocks/show'>Asset Details</a></li>
                 </ul>
             </nav>
                 {html.children}

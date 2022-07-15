@@ -1,20 +1,20 @@
 const router =require('express').Router()
-const stocks = require('../models/stocks.js')
+const assets = require('../models/stocks.js')
 
         
 
 router.get('/',(req,res)=>{
-    res.render('stocks/index', {stocks})
+    res.render('stocks/index', {assets})
 })
 
 
 router.get('/new',(req,res)=>{
-    res.render('stocks/newStock')
+    res.render('stocks/new')
 })
 
 router.get('/:arrayIndex',(req,res)=>{
-    res.render('stocks/showStock',{
-        stock: stocks[req.params.arrayIndex]
+    res.render('stocks/show',{
+        asset: assets[req.params.arrayIndex]
     })
 })
 

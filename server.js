@@ -9,7 +9,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 app.use('/stocks', require('./stock_controllers/stocks'))
 
-app.get('/home',(req,res)=>{
+app.get('/',(req,res)=>{
     res.render('home')
 })
 
